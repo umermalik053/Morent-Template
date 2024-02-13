@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
+    background-color: whitesmoke;
 }
 
 
@@ -24,7 +26,7 @@ body{
     background-color: white;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 
 }
 
@@ -105,6 +107,13 @@ body{
     color: white;
 }
 
+.icon-link {
+    color: black;
+    text-decoration: none;
+}
+
+/* navbar responsive style start here  */
+
 @media only screen and (max-width: 910px) {
     .search-bar {
         width: 100%;
@@ -164,10 +173,9 @@ body{
 
 }
 
-.icon-link {
-    color: black;
-    text-decoration: none;
-}
+
+
+/* navbar responsive style start here  */
 
 /* navbar style :end */
 
@@ -178,7 +186,6 @@ body{
 .footer {
 
     height: 350px;
-    /* margin-top: 50px; */
     width: 100%;
     position: relative;
     bottom: 0;
@@ -186,7 +193,7 @@ body{
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+
 }
 
 .footer-child1 {
@@ -262,8 +269,6 @@ hr {
     gap: 25px;
 
 }
-
-/* resposive footer start here  */
 
 @media only screen and (max-width: 850px) {
     .footer-gchild2 {
@@ -344,11 +349,12 @@ hr {
     .footer-para {
         width: 30vh;
     }
+
 }
 
 @media only screen and (max-width: 320px) {
     .footer {
-        height: 540px;
+        height: 530px;
     }
 
     .footer-content {
@@ -362,41 +368,415 @@ hr {
         width: 100%;
         padding-right: 12px;
     }
+
+    .footer-child1 {
+        padding-top: 20px;
+
+    }
+
+    .footer-child2 {
+        text-align: center;
+    }
 }
-/*  Responsive Navbar Start Here */
 
 /* Footer Style End Here  */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.container {
-    margin-bottom: 2em;
+#container {
     min-height: 100%;
     overflow: auto;
-} */
-/* .footer {
-    bottom: 0;
-    height: 2em;
-    left: 0;
-    position: relative;
-    width:100%;
-} */
+    margin: 20px 60px;
+
+}
+
+/* section1 style start here  */
+
+.section1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    gap: 50px;
+
+
+
+}
+
+.section1-child1 {
+
+    background-color: #54A6FF;
+    padding: 20px 30px;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+.section1-child2 {
+
+    background-color: #264BC8;
+    padding: 20px 30px;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+.section1-heading {
+    width: 60%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section1-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.section1-pic {
+    width: 70%;
+}
+
+.section1-para {
+    width: 60%;
+    font-size: 16px;
+    margin-bottom: 20PX;
+
+}
+
+.section1-button {
+    background-color: #264BC8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.section1-button2 {
+    background-color: #54A6FF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+/* section1 responsive start here  */
+
+@media only screen and (max-width: 898px) {
+    .section1-para {
+        width: 100%;
+    }
+
+    .section1-heading {
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 850px) {
+    .section1 {
+        grid-template-columns: auto;
+    }
+
+    .section1-child2 {
+
+        display: none;
+    }
+
+    .section1-para {
+        width: 50%;
+
+    }
+
+    .section1-heading {
+        width: 50%;
+        margin: 40px 0px;
+    }
+
+}
+
+
+/* section1 style End here  */
+
+
+/* section2 style start here */
+
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.section2-child1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 20px;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.child1-grandchild2 {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.section2-column {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    padding-right: 5px;
+}
+
+.section2-column:nth-last-child(1) {
+
+    border-right: none;
+}
+
+.section2-option {
+    font-size: 12px;
+    width: 150px;
+    border: none;
+}
+
+.gchild {
+    background-color: #1A37A7;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.section2-colheading {
+    font-size: 18px;
+    margin-left: 4px;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+
+.section2-radiobtn {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+
+/* section2 reposive start here  */
+@media only screen and (max-width: 1332px) {
+    .section2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+
+    }
+
+}
+
+/* section2 style end here */
+
+
+/* section3 style start here */
+
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+
+}
+
+.section3-heading {
+    color: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.section3-link {
+    text-decoration: none;
+    color: #1A37A7;
+    font-size: 20px;
+}
+
+/* section3 style end here  */
+
+/* section4 card style start here  */
+.section4 {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 250px);
+    gap: 40px;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: #ffff;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card-name-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-set {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-box {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.car-img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: space-between;
+    color: #90A3bf;
+}
+
+.card-price-btn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #90A3bf;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #3563e9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-word {
+    margin-left: 3px;
+}
+
+.car-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.car-category {
+    color: grey;
+}
+
+/* section4 card reponsive start here  */
+
+
+@media only screen and (max-width: 1240px) {
+    .section4 {
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .section4 {
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .section4 {
+        grid-template-columns: repeat(2, 250px);
+        gap: 25px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .section4 {
+        grid-template-columns: repeat(1, 350px);
+        padding: 10px;
+    }
+
+    .card {
+        width: 350px;
+    }
+
+    .card-icons {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .mobile-set {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* section4 card reponsive end here  */
+
+/* section4 card style end here  */
+
+
+/* section5 style start here  */
+
+.section5-heading {
+    color: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 50px 0px;
+}
+
+/* section5 style end here  */
+
+
+/* section7 style start here  */
+
+
+.section7{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px ;
+}
+.section7-button{
+    background-color: #264BC8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+/* section7 style end here  */
+
+/* section8 style start here  */
+
+.section8{
+    display: flex;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    color: grey;
+    
+}
+/* section8 style end here  */
 
