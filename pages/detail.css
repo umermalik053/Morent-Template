@@ -188,7 +188,7 @@ body {
     margin-left: 0;
     margin-top: 0;
     position: relative;
-    height: 60vmax;
+    height: 100vmax;
     width: 250px;
     background-color: white;
     overflow: auto;
@@ -196,6 +196,7 @@ body {
     padding-top: 20px;
     border-right: 1px solid rgb(160, 160, 160);
     z-index: -1;
+    
 
 }
 
@@ -245,6 +246,7 @@ body {
 
 .main-container {
     display: flex;
+    
 
 
 }
@@ -252,19 +254,27 @@ body {
 
 /* main body start here  */
 .container {
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     width: 100%;
 }
 
+
+/* section 1 start here  */
+
 .section1 {
-    background-color: black;
+    /* background-color: black; */
+    margin: 0px 20px;
     height: 600px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
+/* section1 child1 style start here  */
+
+
 .section1-child1 {
-    background-color: #90A3bf;
+    /* background-color: #90A3bf; */
     width: 48%;
     height: 500px;
     display: flex;
@@ -330,6 +340,10 @@ body {
 
 }
 
+/* section1 child1 style end here  */
+
+
+/* section1 child2 style start here  */
 
 .section1-child2 {
     background-color: white;
@@ -376,12 +390,13 @@ body {
     margin-right: 40px;
     color: #90A3bf;
 }
-.section1-gridvalue{
+
+.section1-gridvalue {
     color: grey;
 
 }
 
-.section1-price-btn{
+.section1-price-btn {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -408,10 +423,138 @@ body {
     color: white;
     cursor: pointer;
 }
-.not-price{
+
+.not-price {
     color: #90A3bf;
     font-size: 20px;
 }
+
+/* section1 child2 style end here  */
+
+@media only screen and (max-width: 1319px) {
+    .section1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 80px;
+    }
+
+}
+
+@media only screen and (max-width: 1292px) {
+
+    .section1-child2 {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+
+    .section1-child2 {
+        height: 600px;
+        padding: 10px 20px;
+    }
+
+    .section1-img {
+
+
+        height: 80px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+
+    .car-img {
+        width: 90px;
+    }
+
+    .car-img2 {
+        width: 100px;
+        border-radius: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 890px) {
+
+.sidebar{
+    display: none;
+}
+
+    .section1{
+        gap: 0px;
+    }
+
+    .section1-child2 {
+        height: 600px;
+        width: 80%;
+        padding: 10px 20px;
+    }
+
+    .section1-child1 {
+        height: 600px;
+        width: 80%;
+        padding: 10px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 524px) {
+
+    .section1 {
+        gap: 30px;
+    }
+
+    .section1-child2 {
+        height: 650px;
+        width: 70%;
+        padding: 10px 20px;
+    }
+
+    .section1-child1 {
+        height: 600px;
+        width: 80%;
+        padding: 10px 20px;
+    }
+
+    .car-img {
+        width: 70px;
+    }
+
+    .car-img2 {
+        width: 70px;
+        border-radius: 10px;
+
+    }
+
+    .section1-img {
+        height: 60px;
+        margin-top: 20px;
+    }
+    .section1-child2 {
+        height: 620px;
+        width: 85%;
+        padding: 10px 20px;
+    }
+    .section1-child1 {
+        height: 650px;
+        width: 85%;
+        padding: 10px 20px;
+    }
+    .section1{
+        justify-content: center;
+    }
+
+}
+
+
+
+/* section 1 end here   */
+
+/* section2 style start here  */
+
 
 
 
